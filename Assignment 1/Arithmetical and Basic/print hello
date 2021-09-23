@@ -1,0 +1,13 @@
+// Q1 Write a Program to Print Hello?
+#include<stdio.h>
+int main(){
+  printf("hello world");
+  return 0;
+}
+
+//Q2 Write a program to print “Hello” with Escape Sequence?
+#include<stdio.h>
+int main(){
+  printf("hello world/n");
+  return 0;
+}
