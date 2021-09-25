@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int a,b,c,d,num,reverse;
+    printf("enter the num\n");
+    scanf("%d",&num);
+    a=num/1000;
+    b=(num%1000)/100;
+    c=(num%100)/10;
+    d=num%10;
+    reverse=(d*1000)+(c*100)+(b*10)+a;
+    printf("reverse number  %d",reverse);
+    return 0;
+}
