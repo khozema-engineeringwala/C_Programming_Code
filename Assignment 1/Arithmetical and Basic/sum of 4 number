@@ -1,0 +1,16 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int num,a,b,sum,c,d;
+    printf("enter the number\n");
+scanf("%d",&num);    
+    a= num / 1000;
+    b= num % 10;
+    c= (num%100)/10;
+    d=(num%1000)/100;
+    sum = a+b+c+d;
+    printf("sum of first and last digit\n %d",sum);
+    return 0;
+}
