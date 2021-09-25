@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int num,a,b,sum;
+    printf("enter the number\n");
+scanf("%d",&num);    
+    a= num / 1000;
+    b= num % 10;
+    sum = a+b;
+    printf("sum of first and last digit\n %d",sum);
+    return 0;
+}
