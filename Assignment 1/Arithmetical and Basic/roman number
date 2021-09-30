@@ -1,0 +1,60 @@
+#include <stdio.h> 
+
+int main()
+{   
+    int number, roman;
+
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    printf("Roman number: ");        
+
+    while(num != 0)
+    {
+
+        if (number >= 1000)      
+        {
+           printf("m");
+           number -= 1000;
+        }        
+
+        else if (number >= 500)
+        {           
+           printf("d");
+           number -= 500;
+        }
+        else if (number >= 100)   
+        {
+           printf("c");
+           number -= 100;                       
+        }
+        else if (number >= 50)  
+        {
+           printf("l");
+           number -= 50;                                                                     
+        }
+
+        else if (number >= 10)    
+        {
+           printf("x");
+           number -= 10;           
+        
+
+        else if (number >= 5)   
+        {
+           printf("v");
+           number -= 5;                                     
+        }
+
+        
+
+        else if (number >= 1)     
+        {
+           printf("i");
+          number -= 1;                                                                                   
+        }
+
+    }
+
+    return 0;
+}
