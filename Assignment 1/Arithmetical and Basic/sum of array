@@ -20,3 +20,5 @@ int main()
 
     printf("Sum of all elements stored in the array is : %d", sum);
 }
+return 0;
+}
