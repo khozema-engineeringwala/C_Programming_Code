@@ -2,7 +2,7 @@
 
 int main()
 {
-    int n;
+    int n,flag=0;
     printf("element in  array");
     scanf("%d",&n);
     int arr[n];
@@ -13,15 +13,15 @@ int main()
     }
     
     for(int i=0 ;i<n;i++){
+    flag=1;
         for(int j =i+1 ;j<n;j++){
-            if(arr[i]!=arr[j]){
-                printf(%d,arr[i]);
-            
-       
-                    }
-                        
-        }
+            if(arr[i]==arr[j] && i!=j)
+            {
+                flag=0;
+            }
+     }
+     
+     if(flag=1)
+     printf("\n%d",arr[i]);
     }
-            printf("\n%d",arr[i]);
-            
 }
