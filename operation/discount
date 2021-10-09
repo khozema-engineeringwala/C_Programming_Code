@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+	int num_item, discount = 0;
+	float price_item, total_expense;
+
+	printf("Enter Quantity: ");
+	scanf("%d", &num_item);
+
+	printf("Enter price_item: ");
+	scanf("%f", &price_item);
+
+	if (num_item>1000)
+		discount = 10;
+	total_expense= (num_item*price_item) - (num_item*price_item*discount / 100);
+	printf("Total total_expenses = Rs. %f\n", total_expense);
+	return 0;
+}
+
+    
