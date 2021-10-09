@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int physics, chemistry, english, maths, PE; 
+    float percent; 
+    printf("marks of five subject are ");
+    scanf("\n%d\n%d\n%d\n%d\n%d", &physics, &chemistry, &english, &maths, &PE);
+
+    percent = (physics + chemistry + english + maths + PE) / 5.0;
+    if(percent>=60){
+        printf("first division");
+    }
+    else if (percent>=50){
+        printf("2nd division");
+    }
+       else(percent<40){
+        printf("fail");
+    }
+    
+}
