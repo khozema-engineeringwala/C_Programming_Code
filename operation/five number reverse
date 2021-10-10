@@ -1,0 +1,26 @@
+
+#include <stdio.h>
+
+int main() {
+
+    
+    int num, n, reverse=0;
+
+    printf("enter the five digit number ");
+    scanf("%d", &num);
+    n = num;
+    while(num!=0)
+    {
+        reverse = reverse * 10;
+        reverse = num % 10 + reverse;
+        num = num/10;
+    }
+    printf("Reversed Number of %d is %d\n",n, reverse);
+    if (n==reverse){
+    printf("entered number %d & reversed number %d are equal", n, reverse);
+    }
+    else{
+printf("entered nmber %d & reversed number %d are not equal", n,reverse);
+    }
+   return 0;
+}
