@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int a,b;
+    printf("enter the 2 number ");
+    scanf("%d%d",&a,&b);
+    int tempt=0;
+    while(tempt!=0)
+    {
+        tempt=a;
+        a=b;
+        b=tempt;
+    }
+    printf("swap number as %d %d",b,a);
+   return 0;
+}
