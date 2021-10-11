@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main(){
+int i,j;
+printf("no of i and j");
+scanf("%d%d",&i,&j);
+for(i=0,i<=5,i++){
+    for(j=0,j<=3,j++)
+    printf("*")
+      }
+    
