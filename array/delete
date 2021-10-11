@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+void main(){
+  int i,position,n;
+       printf("element of array : ");
+       scanf("%d", &n);
+       int arr1[n];
+       for(i=0;i<n;i++)
+            {
+	      printf("element - %d : ",i);
+	      scanf("%d",&arr1[i]);
+	    }
+
+  printf("\npositionition element should be deleted: ");
+  scanf("%d",&position);
+  i=0;
+  while(i!=position-1)
+            i++;
+  while(i<n){
+            arr1[i]=arr1[i+1];
+            i++;
+  }
+  n--;
+   printf("\nnow deleted array : "); 
+  for(i=0;i<n;i++)
+        {
+		   printf("  %d",arr1[i]);
+		}  
+            printf("\n");
+
+}
