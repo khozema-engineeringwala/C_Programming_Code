@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+int main()
+{
+    int size1,size2;
+    scanf("%d",&size1);
+    int arr1[size1];
+    
+    for(int i=0;i<size1;i++)
+        scanf("%d",&arr1[i]);
+    
+    scanf("%d",&size2);
+    int arr2[size2];
+    
+    for(int i=0;i<size2;i++)
+        scanf("%d",&arr2[i]);
+    
+    int arr3[size1+size2];
+    
+    int arr1Itretor = 0, arr2Itretor = 0,arr3Itretor = 0;
+    
+    while(arr1Itretor<size1 && arr2Itretor<size2){
+        if(arr1[arr1Itretor]<arr2[arr2Itretor]){
+            arr3[arr3Itretor] = arr1[arr1Itretor];
+            arr3Itretor++,arr1Itretor++;
+        }
+        else{
+            arr3[arr3Itretor] = arr2[arr2Itretor];
+            arr3Itretor++,arr2Itretor++;
+        }
+    }
+    
+    while(arr1Itretor<size1){
+        arr3[arr3Itretor] = arr1[arr1Itretor];
+        arr3Itretor++,arr1Itretor++;
+    }
+    
+    while(arr2Itretor<size2){
+        arr3[arr3Itretor] = arr2[arr2Itretor];
+        arr3Itretor++,arr2Itretor++;
+    }
+    
+    for(int i=0;i<(size1+size2);i++)
+        printf("%d\n",arr3[i]);
+    
+    return 0;
+}
