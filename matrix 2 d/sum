@@ -3,7 +3,7 @@
     int n,m,i,j;
     printf("number row and column");
     scanf("%d%d",&n,&m);
-    int arr[n][m],arr2[n][m];
+    int arr[n][m],arr2[n][m],sum[n][m];
     for(i=0;i<n;i++){
         for(j=0;j<m;j++){
             printf("values of matrix arr[%d][%d]",i,j);
@@ -11,7 +11,7 @@
             
         }
     }
-    for(i=0;i<n;i++){
+   for(i=0;i<n;i++){
         for(j=0;j<m;j++){
             printf("%d",arr2[i][j]);
     }
@@ -31,12 +31,12 @@
     printf(" \n ");
     
     }
-    int sum[n][m];
-    sum[][]=arr[i][j]+arr2[i][j];
+    sum[i][j]=arr[i][j]+arr2[i][j];;
+    for(i=0;i<n;i++){
+    for(j=0;j<m;j++){
     printf("sum of matrix",sum[i][j]);
-    
-    
-    
-    
+}
+printf(" \n ");
+}
     return 0;
     }
