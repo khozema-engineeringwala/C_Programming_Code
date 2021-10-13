@@ -13,7 +13,7 @@
     }
    for(i=0;i<n;i++){
         for(j=0;j<m;j++){
-            printf("%d",arr2[i][j]);
+            printf("%d",arr[i][j]);
     }
     printf(" \n ");
     }
@@ -34,7 +34,7 @@
     sum[i][j]=arr[i][j]+arr2[i][j];;
     for(i=0;i<n;i++){
     for(j=0;j<m;j++){
-    printf("sum of matrix",sum[i][j]);
+    printf("sum of matrix%d",sum[i][j]);
 }
 printf(" \n ");
 }
