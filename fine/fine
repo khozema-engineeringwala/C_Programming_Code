@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+
+int main() {
+ int min,sum;
+ scanf("%d",&min);
+ if(min>10){
+     sum=3*250 + 4*150 + 3*100 + (min-10)*500;
+ }
+ if(min>7){
+     sum=4*150+3*100+(min-7)*250;
+ }
+ if(min>3){
+     sum=(min-4)*150 + 3*100 ;
+ }
+ if(min<3){
+     sum=(min-3)*100 ;
+ }
+ printf("fine is %d",sum);
+ 
+    
+    return 0;
+}
