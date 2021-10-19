@@ -1,4 +1,4 @@
-
+// Online C compiler to run C program online
 #include <stdio.h>
 
 int main() {
@@ -11,10 +11,10 @@ int main() {
      sum=4*150+3*100+(min-7)*250;
  }
  if(min>3){
-     sum=(min-4)*150 + 3*100 ;
+     sum=(min-3)*150 + 3*100 ;
  }
  if(min<3){
-     sum=(min-3)*100 ;
+     sum=min*100 ;
  }
  printf("fine is %d",sum);
  
