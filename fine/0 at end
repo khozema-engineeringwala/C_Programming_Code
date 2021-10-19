@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main(){
+  int i,position,n,end=0,j;
+       printf("element of array : ");
+       scanf("%d", &n);
+       int arr1[n];
+       for(i=0;i<n;i++)
+            {
+	      printf("element - %d : ",i);
+	      scanf("%d",&arr1[i]);
+	    }
+	    for(j=0;j<n;j++){
+	        if(arr1[j]==0){
+	            i=j;
+	           while(i<n-1){
+                    arr1[i]=arr1[i+1];
+                            i++;
+                }
+             arr1[n-end]=0;
+             end++;
+             
+            }
+	    }
+	    
+   printf("\nnew array : "); 
+  for(i=0;i<n;i++)
+        {
+		   printf("  %d",arr1[i]);
+		}  
+            printf("\n");
+
+}
