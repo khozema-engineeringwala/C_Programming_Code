@@ -1,0 +1,14 @@
+int factorial(int n)
+{
+    if (n == 0)
+        return 1;
+    return n *(n - 1);
+}
+ 
+int main()
+{
+    int num;
+    scanf("%d",&num)
+    printf("Factorial of is %d", num);
+    return 0;
+}
