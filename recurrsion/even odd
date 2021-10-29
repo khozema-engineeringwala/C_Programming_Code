@@ -1,0 +1,25 @@
+#include <stdio.h>
+void printmynumber(int num, int limit)
+{
+    if(num > limit)
+        return;
+    
+    printf("%d, ", num);
+    
+    printmynumber(num + 2, limit);
+}
+int main()
+{
+    int lowerLimit, upperLimit;
+    printf("Enter lower limit: ");
+    scanf("%d", &lowerLimit);
+    printf("Enter upper limit: ");
+    scanf("%d", &upperLimit);
+    
+    printf("Even/odd Numbers from %d to %d are: ", lowerLimit, upperLimit);
+    printmynumber(lowerLimit, upperLimit); 
+    
+    return 0;
+}
+
+
